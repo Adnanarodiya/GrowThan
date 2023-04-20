@@ -534,6 +534,14 @@ body {
   }
 }
 
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -549,6 +557,14 @@ body {
   margin-bottom: 2rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -561,12 +577,12 @@ body {
   margin-right: 1rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
+.mt-40 {
+  margin-top: 10rem;
 }
 
-.mb-12 {
-  margin-bottom: 3rem;
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .flex {
@@ -609,6 +625,10 @@ body {
   width: 100%;
 }
 
+.grow {
+  flex-grow: 1;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -633,12 +653,16 @@ body {
   justify-content: space-between;
 }
 
-.gap-20 {
-  gap: 5rem;
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .gap-16 {
   gap: 4rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
@@ -791,11 +815,6 @@ body {
     margin-right: 0px;
   }
 
-  .md\:my-24 {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-  }
-
   .md\:my-28 {
     margin-top: 7rem;
     margin-bottom: 7rem;
@@ -805,20 +824,20 @@ body {
     margin-bottom: 0px;
   }
 
-  .md\:mr-8 {
-    margin-right: 2rem;
-  }
-
-  .md\:mb-24 {
-    margin-bottom: 6rem;
-  }
-
   .md\:mb-20 {
     margin-bottom: 5rem;
   }
 
+  .md\:mr-8 {
+    margin-right: 2rem;
+  }
+
   .md\:block {
     display: block;
+  }
+
+  .md\:flex {
+    display: flex;
   }
 
   .md\:hidden {
@@ -841,6 +860,10 @@ body {
     align-items: center;
   }
 
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
   .md\:gap-20 {
     gap: 5rem;
   }
@@ -853,26 +876,40 @@ body {
     font-size: 3rem;
     line-height: 1;
   }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .md\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:order-1 {
+    order: 1;
+  }
+
+  .lg\:order-2 {
+    order: 2;
+  }
+
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
   }
 
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:w-44 {
+    width: 11rem;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
   .lg\:text-left {
