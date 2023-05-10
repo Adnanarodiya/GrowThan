@@ -28,7 +28,10 @@ module.exports = {
       },
       backgroundImage: {
         hero: "url('../../build/img/Banner Image.png')",
+        about: "url('../../build/img/Banner Image ab.png')",
+        services: "url('../../build/img/services.png')",
         card: "url('../../build/img/card-bg.png')",
+        cta: "url('../../build/img/cta.png')",
         work: "url('../../build/img/process-bg.png')",
         testimonial: "url('../../build/img/testimonial-bg.png')",
         subscribe: "url('../../build/img/Subscribe-bg-img.png')",

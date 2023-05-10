@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -440,6 +440,9 @@ body {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -487,6 +490,9 @@ body {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -552,22 +558,38 @@ body {
   margin-bottom: 3rem;
 }
 
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-12 {
   margin-bottom: 3rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.mb-28 {
+  margin-bottom: 7rem;
 }
 
 .mb-4 {
@@ -578,12 +600,24 @@ body {
   margin-bottom: 2rem;
 }
 
+.ml-12 {
+  margin-left: 3rem;
+}
+
 .mr-4 {
   margin-right: 1rem;
 }
 
-.mr-8 {
-  margin-right: 2rem;
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
 }
 
 .mt-40 {
@@ -638,6 +672,14 @@ body {
   width: 66.666667%;
 }
 
+.w-2\/5 {
+  width: 40%;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
 .w-4\/5 {
   width: 80%;
 }
@@ -664,10 +706,6 @@ body {
 
 .flex-col {
   flex-direction: column;
-}
-
-.flex-col-reverse {
-  flex-direction: column-reverse;
 }
 
 .items-center {
@@ -728,6 +766,10 @@ body {
   border-radius: 0.75rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -735,6 +777,16 @@ body {
 .border-blue {
   --tw-border-opacity: 1;
   border-color: rgb(22 36 102 / var(--tw-border-opacity));
+}
+
+.border-gray-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
+.bg-\[\#181b31\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 27 49 / var(--tw-bg-opacity));
 }
 
 .bg-blue {
@@ -747,12 +799,24 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-about {
+  background-image: url('../../build/img/Banner Image ab.png');
+}
+
 .bg-card {
   background-image: url('../../build/img/card-bg.png');
 }
 
+.bg-cta {
+  background-image: url('../../build/img/cta.png');
+}
+
 .bg-hero {
   background-image: url('../../build/img/Banner Image.png');
+}
+
+.bg-services {
+  background-image: url('../../build/img/services.png');
 }
 
 .bg-subscribe {
@@ -767,6 +831,10 @@ body {
   background-size: cover;
 }
 
+.bg-center {
+  background-position: center;
+}
+
 .p-12 {
   padding: 3rem;
 }
@@ -777,6 +845,11 @@ body {
 
 .p-8 {
   padding: 2rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-4 {
@@ -794,12 +867,40 @@ body {
   padding-bottom: 2rem;
 }
 
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pt-28 {
+  padding-top: 7rem;
+}
+
+.pt-80 {
+  padding-top: 20rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-2xl {
@@ -822,6 +923,11 @@ body {
   line-height: 1;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -841,16 +947,12 @@ body {
   font-weight: 700;
 }
 
+.font-extrabold {
+  font-weight: 800;
+}
+
 .font-semibold {
   font-weight: 600;
-}
-
-.leading-4 {
-  line-height: 1rem;
-}
-
-.leading-10 {
-  line-height: 2.5rem;
 }
 
 .text-blue {
@@ -903,6 +1005,10 @@ body {
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -918,9 +1024,26 @@ body {
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 
+.hover\:bg-blue:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 36 102 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-transparent:hover {
+  background-color: transparent;
+}
+
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-card:hover {
+  background-image: url('../../build/img/card-bg.png');
+}
+
+.hover\:bg-cover:hover {
+  background-size: cover;
 }
 
 .hover\:text-blue:hover {
@@ -931,6 +1054,11 @@ body {
 .hover\:text-red:hover {
   --tw-text-opacity: 1;
   color: rgb(255 59 51 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -958,8 +1086,20 @@ body {
     margin-bottom: 0px;
   }
 
+  .md\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
   .md\:mb-20 {
     margin-bottom: 5rem;
+  }
+
+  .md\:mb-44 {
+    margin-bottom: 11rem;
+  }
+
+  .md\:mr-40 {
+    margin-right: 10rem;
   }
 
   .md\:mr-8 {
@@ -976,6 +1116,10 @@ body {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-1\/4 {
+    width: 25%;
   }
 
   .md\:w-3\/4 {
@@ -998,10 +1142,6 @@ body {
     align-items: center;
   }
 
-  .md\:justify-center {
-    justify-content: center;
-  }
-
   .md\:justify-between {
     justify-content: space-between;
   }
@@ -1010,16 +1150,29 @@ body {
     gap: 5rem;
   }
 
+  .md\:pb-40 {
+    padding-bottom: 10rem;
+  }
+
+  .md\:pt-40 {
+    padding-top: 10rem;
+  }
+
+  .md\:pt-52 {
+    padding-top: 13rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
 
-  .md\:text-center {
-    text-align: center;
-  }
-
   .md\:text-5xl {
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 }
@@ -1054,8 +1207,20 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
   .lg\:justify-start {
     justify-content: flex-start;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
+  }
+
+  .lg\:bg-cover {
+    background-size: cover;
   }
 
   .lg\:text-left {
