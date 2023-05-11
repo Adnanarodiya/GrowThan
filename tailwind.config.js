@@ -27,10 +27,10 @@ module.exports = {
         Nunito: ['"Nunito", sans-serif'],
       },
       backgroundImage: {
-        hero: "url('../../build/img/Banner Image.png')",
+        hero: "url('../../build/img/Background.png')",
         about: "url('../../build/img/Banner Image ab.png')",
         services: "url('../../build/img/services.png')",
-        card: "url('../../build/img/card-bg.png')",
+        card: "url('../../build/img/card-bg-image.png')",
         cta: "url('../../build/img/cta.png')",
         work: "url('../../build/img/process-bg.png')",
         testimonial: "url('../../build/img/testimonial-bg.png')",
