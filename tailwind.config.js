@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./build/**/*.{html,js}"],
   theme: {
@@ -25,13 +24,16 @@ module.exports = {
       },
       fontFamily: {
         Nunito: ['"Nunito", sans-serif'],
+        noto:["'Noto Sans', sans-serif"],
       },
       backgroundImage: {
         hero: "url('../../build/img/Background.png')",
-        about: "url('../../build/img/Banner Image ab.png')",
-        services: "url('../../build/img/services.png')",
+        about: "url('../../build/img/aboutusbg-img.png')",
+        services: "url('../../build/img/services-bg.png')",
+        contact: "url('../../build/img/contact-us-bg.png')",
         card: "url('../../build/img/card-bg-image.png')",
-        cta: "url('../../build/img/cta.png')",
+        contactus: "url('../../build/img/card-bg-image.png')",
+        cta: "url('../../build/img/service-cta.png')",
         work: "url('../../build/img/process-bg.png')",
         testimonial: "url('../../build/img/testimonial-bg.png')",
         subscribe: "url('../../build/img/Subscribe-bg-img.png')",

@@ -426,6 +426,10 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+p {
+  font-family: 'Noto Sans', sans-serif;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -540,6 +544,10 @@ body {
   }
 }
 
+.bottom-2 {
+  bottom: 0.5rem;
+}
+
 .order-1 {
   order: 1;
 }
@@ -553,19 +561,9 @@ body {
   margin-right: auto;
 }
 
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
 .my-14 {
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
-}
-
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
 }
 
 .my-8 {
@@ -613,12 +611,12 @@ body {
   margin-bottom: 2rem;
 }
 
-.mr-4 {
-  margin-right: 1rem;
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
+.mr-4 {
+  margin-right: 1rem;
 }
 
 .mt-12 {
@@ -633,16 +631,8 @@ body {
   margin-top: 7rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
-}
-
-.inline-block {
-  display: inline-block;
 }
 
 .flex {
@@ -669,8 +659,20 @@ body {
   height: 1.5rem;
 }
 
+.max-h-12 {
+  max-height: 3rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-1\/5 {
+  width: 20%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .w-12 {
@@ -804,14 +806,14 @@ body {
   border-color: rgb(22 36 102 / var(--tw-border-opacity));
 }
 
+.border-gray {
+  --tw-border-opacity: 1;
+  border-color: rgb(208 208 208 / var(--tw-border-opacity));
+}
+
 .border-gray-600 {
   --tw-border-opacity: 1;
   border-color: rgb(75 85 99 / var(--tw-border-opacity));
-}
-
-.bg-\[\#181b31\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 27 49 / var(--tw-bg-opacity));
 }
 
 .bg-blue {
@@ -830,15 +832,23 @@ body {
 }
 
 .bg-about {
-  background-image: url('../../build/img/Banner Image ab.png');
+  background-image: url('../../build/img/aboutusbg-img.png');
 }
 
 .bg-card {
   background-image: url('../../build/img/card-bg-image.png');
 }
 
+.bg-contact {
+  background-image: url('../../build/img/contact-us-bg.png');
+}
+
+.bg-contactus {
+  background-image: url('../../build/img/card-bg-image.png');
+}
+
 .bg-cta {
-  background-image: url('../../build/img/cta.png');
+  background-image: url('../../build/img/service-cta.png');
 }
 
 .bg-hero {
@@ -846,7 +856,7 @@ body {
 }
 
 .bg-services {
-  background-image: url('../../build/img/services.png');
+  background-image: url('../../build/img/services-bg.png');
 }
 
 .bg-subscribe {
@@ -890,6 +900,10 @@ body {
   padding: 1rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .p-8 {
   padding: 2rem;
 }
@@ -929,24 +943,16 @@ body {
   padding-bottom: 2rem;
 }
 
-.pb-32 {
-  padding-bottom: 8rem;
+.pb-14 {
+  padding-bottom: 3.5rem;
 }
 
-.pb-8 {
-  padding-bottom: 2rem;
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .pl-4 {
   padding-left: 1rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
-}
-
-.pt-80 {
-  padding-top: 20rem;
 }
 
 .text-left {
@@ -955,10 +961,6 @@ body {
 
 .text-center {
   text-align: center;
-}
-
-.align-middle {
-  vertical-align: middle;
 }
 
 .text-2xl {
@@ -981,16 +983,6 @@ body {
   line-height: 1;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -999,11 +991,6 @@ body {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -1031,6 +1018,11 @@ body {
   font-weight: 600;
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-blue {
   --tw-text-opacity: 1;
   color: rgb(22 36 102 / var(--tw-text-opacity));
@@ -1039,11 +1031,6 @@ body {
 .text-blue-dark {
   --tw-text-opacity: 1;
   color: rgb(24 27 49 / var(--tw-text-opacity));
-}
-
-.text-blue-light {
-  --tw-text-opacity: 1;
-  color: rgb(89 86 232 / var(--tw-text-opacity));
 }
 
 .text-gray {
@@ -1076,19 +1063,9 @@ body {
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
-.text-red-light {
-  --tw-text-opacity: 1;
-  color: rgb(255 24 80 / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-yellow-400 {
-  --tw-text-opacity: 1;
-  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
 .text-yellow-500 {
@@ -1110,8 +1087,9 @@ body {
   border-width: 1px;
 }
 
-.hover\:border-0:hover {
-  border-width: 0px;
+.hover\:border-blue:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(22 36 102 / var(--tw-border-opacity));
 }
 
 .hover\:border-gray-500:hover {
@@ -1131,14 +1109,6 @@ body {
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-card:hover {
-  background-image: url('../../build/img/card-bg-image.png');
-}
-
-.hover\:bg-cover:hover {
-  background-size: cover;
 }
 
 .hover\:text-blue:hover {
@@ -1168,6 +1138,10 @@ body {
   .sm\:w-2\/4 {
     width: 50%;
   }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 768px) {
@@ -1181,21 +1155,16 @@ body {
     margin-bottom: 6rem;
   }
 
-  .md\:my-28 {
-    margin-top: 7rem;
-    margin-bottom: 7rem;
-  }
-
   .md\:mb-0 {
     margin-bottom: 0px;
   }
 
-  .md\:mb-12 {
-    margin-bottom: 3rem;
-  }
-
   .md\:mb-20 {
     margin-bottom: 5rem;
+  }
+
+  .md\:mb-24 {
+    margin-bottom: 6rem;
   }
 
   .md\:mb-44 {
@@ -1234,16 +1203,8 @@ body {
     display: none;
   }
 
-  .md\:w-1\/4 {
-    width: 25%;
-  }
-
   .md\:w-2\/4 {
     width: 50%;
-  }
-
-  .md\:w-2\/5 {
-    width: 40%;
   }
 
   .md\:w-3\/4 {
@@ -1252,6 +1213,10 @@ body {
 
   .md\:w-44 {
     width: 11rem;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:grid-cols-2 {
@@ -1266,6 +1231,10 @@ body {
     flex-direction: row;
   }
 
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
   .md\:items-center {
     align-items: center;
   }
@@ -1274,12 +1243,21 @@ body {
     justify-content: flex-start;
   }
 
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+
   .md\:gap-20 {
     gap: 5rem;
   }
 
   .md\:p-24 {
     padding: 6rem;
+  }
+
+  .md\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
 
   .md\:py-32 {
@@ -1299,8 +1277,8 @@ body {
     padding-top: 10rem;
   }
 
-  .md\:pt-52 {
-    padding-top: 13rem;
+  .md\:pt-96 {
+    padding-top: 24rem;
   }
 
   .md\:text-left {
@@ -1329,11 +1307,6 @@ body {
   .md\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
-  }
-
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 
   .md\:text-lg {
@@ -1402,6 +1375,11 @@ body {
 
   .lg\:text-5xl {
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 }

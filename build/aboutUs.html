@@ -14,12 +14,13 @@
 </head>
 
 <body>
-    <header class="bg-green-light mt-5 py-4">
+    <!-- header  -->
+    <header class="py-4">
         <div class="container">
             <section class="flex items-center justify-between">
                 <div>
                     <a href="">
-                        <img src="img/image 3.png" alt="" class="h-12" />
+                        <img src="img/logo.png" alt="" class="max-h-12" />
                     </a>
                 </div>
 
@@ -28,17 +29,19 @@
                         class="h-12 w-12 cursor-pointer rounded-md border-2 border-blue text-3xl text-blue md:hidden">
                         &#9776;
                     </button>
-                    <nav class="hidden space-x-8 md:block" aria-label="main">
+                    <nav class="hidden items-center space-x-8 md:block" aria-label="main">
                         <a class="text-xl font-semibold text-blue hover:text-red hover:underline"
                             href="index.html">Home</a>
                         <a class="text-xl font-semibold text-blue hover:text-red hover:underline"
-                            href="aboutUs.html">About Us</a>
-                        <a class="text-xl font-semibold text-blue hover:text-red hover:underline" href="#">Service
+                            href="aboutUs.html">About
                             Us</a>
-                        <a class="text-xl font-semibold text-blue hover:text-red hover:underline" href="#">Contact
-                            Us</a>
+                        <a class="text-xl font-semibold text-blue hover:text-red hover:underline"
+                            href="services.html">Service</a>
+                        <a class="text-xl font-semibold text-blue hover:text-red hover:underline"
+                            href="contact.html">Contact Us</a>
+                        <a class="text-xl font-semibold text-blue hover:text-red hover:underline" href="#">Career</a>
                         <button
-                            class="bg-green mx-auto mb-8 h-16 w-4/5 items-center justify-center rounded-xl bg-blue text-xl font-semibold text-white sm:w-2/4 md:mx-0 md:w-44"
+                            class=" mx-auto h-16 w-4/5 items-center justify-center rounded-xl bg-blue text-xl font-semibold text-white sm:w-2/4 md:mx-0 md:w-44 hover:bg-white hover:text-blue border hover:border-blue"
                             type="button">
                             Register
                         </button>
@@ -47,317 +50,351 @@
             </section>
             <section id="mobile-menu" class="bg-green-light hidden w-full flex-col text-5xl">
                 <nav class="flex min-h-screen flex-col items-center py-8">
-                    <a class="w-full py-6 text-center text-base font-semibold hover:text-red" href="index.html">Home</a>
-                    <a class="w-full py-6 text-center text-base font-semibold hover:text-red" href="aboutUs.html">About
+                    <a class="w-full py-6 text-center text-lg font-semibold hover:text-red" href="index.html">Home</a>
+                    <a class="w-full py-6 text-center text-lg font-semibold hover:text-red" href="aboutUs.html">About
                         Us</a>
-                    <a class="w-full py-6 text-center text-base font-semibold hover:text-red" href="#">Service Us</a>
-                    <a class="w-full py-6 text-center text-base font-semibold hover:text-red" href="#">Contact Us</a>
+                    <a class="w-full py-6 text-center text-lg font-semibold hover:text-red" href="services.html">Service
+                        Us</a>
+                    <a class="w-full py-6 text-center text-lg font-semibold hover:text-red"
+                        href="contactUs.html">Contact Us</a>
                 </nav>
             </section>
         </div>
     </header>
-    <main>
-        <section class="bg-about lg:bg-cover bg-fill">
-            <div class="container">
-                <div class="py-20 md:pt-52 md:pb-40">
 
-                    <h1 class="text-blue text-2xl md:text-7xl font-extrabold text-center md:pt-40">
-                        About
-                        <span class="pl-4 text-red"> Us</span>
-                    </h1>
-                </div>
-            </div>
-        </section>
-        <section class="bg-subscribe bg-cover p-12">
-            <div class="container">
-                <div class="grid md:grid-cols-2">
-                    <div class="mx-auto text-center md:flex">
-                        <h4 class="my-8 text-4xl font-semibold text-gray md:mr-8">
-                            300<span class="text-blue-light">+</span>
-                        </h4>
-                        <p class="my-8 text-2xl font-semibold text-gray">HAPPY CLIENTS</p>
-                    </div>
-                    <div class="mx-auto text-center md:flex">
-                        <h4 class="my-8 text-4xl font-semibold text-gray md:mr-8">
-                            500<span class="text-red-light">+</span>
-                        </h4>
-                        <p class="my-8 text-2xl font-semibold text-gray">PUBLISHERS</p>
-                    </div>
-                    <div class="mx-auto text-center md:flex">
-                        <h4 class="my-8 text-4xl font-semibold text-gray md:mr-8">
-                            25,000<span class="text-yellow-400">+</span>
-                        </h4>
-                        <p class="my-8 text-2xl font-semibold text-gray">
-                            DIALY CONVERSIONS
-                        </p>
-                    </div>
-                    <div class="mx-auto text-center md:flex">
-                        <h4 class="my-8 text-4xl font-semibold text-gray md:mr-8">
-                            150<span class="text-green-500">+</span>
-                        </h4>
-                        <p class="my-8 text-2xl font-semibold text-gray">
-                            CAMPAINGS DELIVERED
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="grid gap-8 lg:grid-cols-2">
-                    <div class="order-2 lg:order-1">
-                        <div>
-                            <img class="mx-auto lg:mx-0" src="img/about Image (1).png" alt="" />
-                        </div>
-                    </div>
+    <!-- about Us hero section  -->
+    <section class="bg-about lg:bg-cover bg-fill">
+        <div class="container">
+            <div class="py-20 md:pt-96 md:pb-40">
 
-                    <div class="order-1">
-                        <div
-                            class="order-1 flex flex-col items-center justify-center md:flex-row lg:order-2 lg:justify-start">
-                            <div>
-                                <img class="my-8 md:mr-40" src="img/get-the-best.png" alt="" />
-                            </div>
-                            <div class="mb-8 text-center md:mb-0 md:text-left">
-                                <p class="mb-4 text-lg font-semibold text-blue">
-                                    <span class="mr-4 text-red">//</span>About Us
-                                </p>
-                                <h4 class="text-3xl font-bold text-blue md:text-5xl">
-                                    The #1 digital marketing services company
-                                </h4>
-                            </div>
+                <h1 class="text-blue text-2xl md:text-7xl font-extrabold text-center md:pt-40">
+                    About
+                    <span class="pl-4 text-red"> Us</span>
+                </h1>
+            </div>
+        </div>
+    </section>
+    <!-- stats  -->
+    <section class="pb-14 bg-subscribe bg-cover bg-no-repeat object-fill md:mb-24">
+        <div class="container">
+            <div class="">
+                <div>
+                    <div class="mx-auto grid grid-cols-1 gap-16 py-12 text-center md:grid-cols-2 md:py-32 lg:w-2/4">
+                        <div class="items-center justify-center md:flex">
+                            <h3
+                                class="mb-2 text-2xl font-bold text-white sm:mb-0 md:text-center md:text-3xl lg:text-5xl">
+                                100<span class="text-purple-700">+</span>
+                            </h3>
+                            <p class="text-base font-normal text-gray md:pl-3 md:text-left">
+                                HAPPY CLIENTS
+                            </p>
                         </div>
-                        <hr />
-                        <p
-                            class="mx-auto my-8 w-4/5 text-center text-xl font-semibold text-blue-dark lg:mx-0 lg:text-left">
-                            At growthan.com, we are passionate about helping businesses
-                            succeed through data-driven marketing strategies. With a focus
-                            on performance, we work closely with our clients to develop
-                            customized solutions that drive growth, engagement, and ROI.
-                        </p>
-                        <p
-                            class="mx-auto my-8 w-4/5 text-center text-xl font-semibold text-blue-dark lg:mx-0 lg:text-left">
-                            Our team of experienced professionals is dedicated to delivering
-                            results and helping you achieve your goals. Contact us today to
-                            learn more about how we can help take your business to the next
-                            level.
-                        </p>
-                        <div class="mx-auto">
-                            <button
-                                class="mx-auto mb-8 flex h-16 w-4/5 flex-row items-center justify-center rounded-xl border border-blue text-xl font-semibold text-blue hover:bg-blue hover:text-white sm:w-2/4 lg:mx-0 lg:mb-0 lg:w-44"
-                                type="button">
-                                Get in Touch
-                            </button>
+                        <div class="items-center justify-center md:flex">
+                            <h3
+                                class="mb-2 text-2xl font-bold text-white sm:mb-0 md:text-center md:text-3xl lg:text-5xl">
+                                500<span class="text-red-600">+</span>
+                            </h3>
+                            <p class="text-base font-normal text-gray md:pl-3 md:text-left">
+                                PUBLISHERS
+                            </p>
+                        </div>
+                        <div class="items-center justify-center md:flex">
+                            <h3
+                                class="mb-2 text-2xl font-bold text-white sm:mb-0 md:text-center md:text-3xl lg:text-5xl">
+                                2,500<span class="text-yellow-500">+</span>
+                            </h3>
+                            <p class="text-base font-normal text-gray md:pl-3 md:text-left">
+                                DAILY CONVERSIONS
+                            </p>
+                        </div>
+                        <div class="items-center justify-center md:flex">
+                            <h3
+                                class="mb-2 text-2xl font-bold text-white sm:mb-0 md:text-center md:text-3xl lg:text-5xl">
+                                150<span class="text-green-500">+</span>
+                            </h3>
+                            <p class="text-base font-normal text-gray md:pl-3 md:text-left">
+                                CAMPAIGNS DELIVERED
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="flex flex-col items-center justify-center">
-                    <div><img class="mb-10" src="img/our-values.png" alt="" /></div>
-                    <div class="mb-8 text-center md:mb-0 md:text-left">
-                        <p class="mb-4 text-center text-lg font-semibold text-blue">
-                            <span class="mr-4 text-red">//</span>OUR VALUES
-                        </p>
-                        <h4 class="mb-16 text-center text-3xl font-bold text-blue md:text-5xl">
-                            The core values behind our work
-                        </h4>
-                    </div>
-                </div>
-                <div class="grid gap-16 md:gap-20 lg:grid-cols-3">
-                    <div class="rounded-3xl bg-card bg-cover p-8 text-center lg:text-left">
-                        <div>
-                            <img class="mx-auto mb-8" src="img/our-values-1.png" alt="" />
-                        </div>
-                        <h3 class="mb-4 text-center text-3xl font-semibold text-blue">
-                            Efficiency
-                        </h3>
-                        <p class="text-center text-2xl font-semibold text-blue-dark">
-                            We believe in delivering results in the most effective and
-                            efficient way possible, maximizing our resources to achieve
-                            optimal outcomes.
-                        </p>
-                        <div>
-                            <img class="mx-auto mb-8 mt-12" src="img/Line.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="rounded-3xl bg-card bg-cover p-8 text-center lg:text-left">
-                        <div>
-                            <img class="mx-auto mb-8" src="img/our-values-2.png" alt="" />
-                        </div>
-                        <h3 class="mb-4 text-center text-3xl font-semibold text-blue">
-                            Accountability
-                        </h3>
-                        <p class="text-center text-2xl font-semibold text-blue-dark">
-                            We take responsibility for our actions and hold ourselves to the
-                            highest standards of quality and performance, ensuring that our
-                            clients receive the best services.
-                        </p>
-                        <div>
-                            <img class="mx-auto mb-8 mt-12" src="img/Line.png" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="rounded-3xl bg-card bg-cover p-8 text-center lg:text-left">
-                        <div>
-                            <img class="mx-auto mb-8" src="img/our-values-3.png" alt="" />
-                        </div>
-                        <h3 class="mb-4 text-center text-3xl font-semibold text-blue">
-                            Commitment
-                        </h3>
-                        <p class="text-center text-2xl font-semibold text-blue-dark">
-                            We are dedicated to delivering value and driving growth for our
-                            clients, going above and beyond to exceed their expectations and
-                            help them achieve their goals.
-                        </p>
-                        <div>
-                            <img class="mx-auto mb-8 mt-12" src="img/Line.png" alt="" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mx-auto mb-24 mt-16 flex flex-col justify-center lg:flex-row lg:gap-8">
+        </div>
+    </section>
+    <!-- About us -->
+    <section>
+        <div class="container">
+            <div class="grid gap-8 lg:grid-cols-2">
+                <div class="order-2 lg:order-1">
                     <div>
+                        <img class="mx-auto lg:mx-0" src="img/about-us-1.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="order-1">
+                    <div
+                        class="order-1 flex flex-col items-center justify-center md:flex-row lg:order-2 lg:justify-start">
+                        <div>
+                            <img class="my-8 md:mr-40" src="img/get-the-best.png" alt="" />
+                        </div>
+                        <div class="mb-8 text-center md:mb-0 md:text-left">
+                            <p class="mb-4 text-lg font-semibold text-blue">
+                                <span class="mr-4 text-red">//</span>About Us
+                            </p>
+                            <h4 class="text-3xl font-bold text-blue md:text-5xl">
+                                The #1 digital marketing services company
+                            </h4>
+                        </div>
+                    </div>
+                    <hr />
+                    <p class="mx-auto my-8 w-4/5 text-center text-xl font-medium text-blue-dark lg:mx-0 lg:text-left">
+                        At growthan.com, we are passionate about helping businesses
+                        succeed through data-driven marketing strategies. With a focus
+                        on performance, we work closely with our clients to develop
+                        customized solutions that drive growth, engagement, and ROI.
+                    </p>
+                    <p class="mx-auto my-8 w-4/5 text-center text-xl font-medium text-blue-dark lg:mx-0 lg:text-left">
+                        Our team of experienced professionals is dedicated to delivering
+                        results and helping you achieve your goals. Contact us today to
+                        learn more about how we can help take your business to the next
+                        level.
+                    </p>
+                    <div class="mx-auto">
                         <button
-                            class="mx-auto mb-8 flex h-16 w-4/5 flex-row items-center justify-center rounded-xl border border-blue text-xl font-semibold text-blue hover:bg-blue hover:text-white sm:w-2/4 lg:w-44"
+                            class="mx-auto mb-8 flex h-16 w-4/5 flex-row items-center justify-center rounded-xl border border-blue text-xl font-semibold text-blue hover:bg-blue hover:text-white sm:w-2/4 lg:mx-0 lg:mb-0 lg:w-44"
                             type="button">
                             Get in Touch
                         </button>
                     </div>
-                    <div>
-                        <button
-                            class="mx-auto mb-8 flex h-16 w-4/5 flex-row items-center justify-center rounded-xl border bg-blue text-xl font-semibold text-white hover:bg-blue hover:text-white sm:w-2/4 lg:w-44"
-                            type="button">
-                            Our Services
-                            <img class="pl-4" src="img/arrow-svg.svg" alt="" />
-                        </button>
-                    </div>
                 </div>
             </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="flex flex-col items-center justify-center">
-                    <div><img class="mb-10" src="img/our-team.png" alt="" /></div>
-                    <div class="mb-8 text-center md:mb-0 md:text-left">
-                        <p class="mb-4 text-center text-lg font-semibold text-blue">
-                            <span class="mr-4 text-red">//</span>OUR TEAM
-                        </p>
-                        <h4 class="mb-16 text-center text-3xl font-bold text-blue md:text-5xl">
-                            Our team of expert marketers
-                        </h4>
-                    </div>
-                </div>
-                <div class="mb-16 grid gap-16 md:gap-20 lg:grid-cols-3">
-                    <div
-                        class="rounded-3xl border hover:border-0 border-gray-600 p-8 text-center hover:bg-card hover:bg-cover lg:text-left">
-                        <div>
-                            <img class="mx-auto mb-8" src="img/member-1.png" alt="" />
-                        </div>
-                        <div>
-                            <img class="mx-auto mb-8 mt-12" src="img/Line.png" alt="" />
-                        </div>
-
-                        <h3 class="mb-4 text-center text-3xl font-semibold text-blue">
-                            Pippa Clarkson
-                        </h3>
-                        <p class="text-center text-2xl font-semibold text-blue-dark">
-                            Lead Manager
-                        </p>
-                        <div class="my-8 flex justify-center gap-4">
-                            <div><img src="img/Facebook.png" alt="" /></div>
-                            <div><img src="img/Twitter.png" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="rounded-3xl bg-card bg-cover p-8 text-center lg:text-left">
-                        <div>
-                            <img class="mx-auto mb-8" src="img/member-2.png" alt="" />
-                        </div>
-                        <div>
-                            <img class="mx-auto mb-8 mt-12" src="img/Line.png" alt="" />
-                        </div>
-
-                        <h3 class="mb-4 text-center text-3xl font-semibold text-blue">
-                            Richard Walsh
-                        </h3>
-                        <p class="text-center text-2xl font-semibold text-blue-dark">
-                            Lead Manager
-                        </p>
-                        <div class="my-8 flex justify-center gap-4">
-                            <div><img src="img/Facebook.png" alt="" /></div>
-                            <div><img src="img/Twitter.png" alt="" /></div>
-                            <div><img src="img/Instagram.png" alt="" /></div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="rounded-3xl border border-gray-600 p-8 text-center hover:bg-card hover:bg-cover lg:text-left">
-                        <div>
-                            <img class="mx-auto mb-8" src="img/member-3.png" alt="" />
-
-                            <div>
-                                <img class="mx-auto mb-8 mt-12" src="img/Line.png" alt="" />
-                            </div>
-                        </div>
-                        <h3 class="mb-4 text-center text-3xl font-semibold text-blue">
-                            Richard Walsh
-                        </h3>
-                        <p class="text-center text-2xl font-semibold text-blue-dark">
-                            Lead Manager
-                        </p>
-                        <div class="my-8 flex justify-center gap-4">
-                            <div><img src="img/Twitter.png" alt="" /></div>
-                            <div><img src="img/Instagram.png" alt="" /></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="bg-blue text-white">
+        </div>
+    </section>
+    <!-- Our values  -->
+    <section class="py-20">
         <div class="container">
-            <div class="text-center md:flex md:text-left">
-                <div class="md:w-1/4">
-                    <h4 class="mb-12 pt-12 text-2xl font-semibold">Pages</h4>
-                    <div class="flex flex-col">
-                        <a class="mb-4" href="#">Home</a>
-                        <a class="mb-4" href="#">Service</a>
-                        <a class="mb-4" href="#">About</a>
-                        <a class="mb-4" href="#">Contact</a>
-                    </div>
-                </div>
-                <div class="mb-12 pt-12 md:mb-12 md:w-1/4">
-                    <h4 class="mb-12 text-2xl font-semibold">Social Logins</h4>
-                    <div class="flex flex-col">
-                        <a class="mb-4" href="#">Facebook</a>
-                        <a class="mb-4" href="#">Twitter</a>
-                        <a class="mb-4" href="#">Instagram</a>
-                        <a class="mb-4" href="#">Skype</a>
-                    </div>
-                </div>
-                <div class="mb-12 pt-12 md:w-1/4">
-                    <h4 class="mb-12 text-2xl font-semibold">Location</h4>
-                    <div class="flex flex-col">
-                        <p class="mx-auto mb-12 w-3/4 underline md:mx-0" href="#">
-                            UNIT NO. 147, FIRST FLOOR, JMD MEGAPOLIS, Badshahpur Sohna Rd
-                            Hwy, Sector 48, Gurugram, Haryana 122018 .
-                        </p>
-                        <a class="mb-4 underline" href="#">Location Map</a>
-                    </div>
-                </div>
-                <div class="mb-12 pt-12 md:w-1/4">
-                    <h4 class="mb-12 text-2xl font-semibold">Get in touch</h4>
-                    <button type="button" class="mb-12 h-12 w-4/5 bg-[#181b31] text-white">
-                        +91 8617514085
-                    </button>
-                    <p class="underline">business@growthan.com</p>
+            <div class="flex flex-col items-center justify-center">
+                <div><img class="mb-10" src="img/our-values.png" alt="" /></div>
+                <div class="mb-8 text-center md:mb-0 md:text-left">
+                    <p class="mb-4 text-center text-lg font-semibold text-blue">
+                        <span class="mr-4 text-red">//</span>OUR VALUES
+                    </p>
+                    <h4 class="mb-16 text-center text-3xl font-bold text-blue md:text-5xl">
+                        The core values behind our work
+                    </h4>
                 </div>
             </div>
-            <p class="pb-8 text-center">Copyright © 2021 Foodies.</p>
+            <div class="grid gap-16 md:gap-20 lg:grid-cols-3">
+                <div class="rounded-3xl bg-card bg-cover p-8 text-center lg:text-left">
+                    <div>
+                        <img class="mx-auto mb-8" src="img/our-values-1.png" alt="" />
+                    </div>
+                    <h3 class="mb-4 text-center text-3xl font-semibold text-blue">
+                        Efficiency
+                    </h3>
+                    <p class="text-center text-2xl font-medium text-blue-dark">
+                        We believe in delivering results in the most effective and
+                        efficient way possible, maximizing our resources to achieve
+                        optimal outcomes.
+                    </p>
+                    <div class="border bottom-2 w-1/5 border-blue justify-center mx-auto my-8">
+
+                    </div>
+                </div>
+                <div class="rounded-3xl bg-card bg-cover p-8 text-center lg:text-left">
+                    <div>
+                        <img class="mx-auto mb-8" src="img/our-values-2.png" alt="" />
+                    </div>
+                    <h3 class="mb-4 text-center text-3xl font-semibold text-blue">
+                        Accountability
+                    </h3>
+                    <p class="text-center text-2xl font-medium text-blue-dark">
+                        We take responsibility for our actions and hold ourselves to the
+                        highest standards of quality and performance, ensuring that our
+                        clients receive the best services.
+                    </p>
+                    <div class="border bottom-2 w-1/5 border-blue justify-center mx-auto my-8">
+
+                    </div>
+                </div>
+
+                <div class="rounded-3xl bg-card bg-cover p-8 text-center lg:text-left">
+                    <div>
+                        <img class="mx-auto mb-8" src="img/our-values-3.png" alt="" />
+                    </div>
+                    <h3 class="mb-4 text-center text-3xl font-semibold text-blue">
+                        Commitment
+                    </h3>
+                    <p class="text-center text-2xl font-medium text-blue-dark">
+                        We are dedicated to delivering value and driving growth for our
+                        clients, going above and beyond to exceed their expectations and
+                        help them achieve their goals.
+                    </p>
+                    <div class="border bottom-2 w-1/5 border-blue justify-center mx-auto my-8">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mx-auto mb-24 mt-16 flex flex-col justify-center lg:flex-row lg:gap-8">
+                <div>
+                    <button
+                        class="mx-auto mb-8 flex h-16 w-4/5 flex-row items-center justify-center rounded-xl border border-blue text-xl font-semibold text-blue hover:bg-blue hover:text-white sm:w-2/4 lg:w-44"
+                        type="button">
+                        Get in Touch
+                    </button>
+                </div>
+                <div>
+                    <button
+                        class="mx-auto mb-8 flex h-16 w-4/5 flex-row items-center justify-center rounded-xl border bg-blue text-xl font-semibold text-white hover:bg-blue hover:text-white sm:w-2/4 lg:w-44"
+                        type="button">
+                        Our Services
+
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our team  -->
+    <section>
+        <div class="container">
+            <div class="flex flex-col items-center justify-center">
+                <div><img class="mb-10" src="img/our-team.png" alt="" /></div>
+                <div class="mb-8 text-center md:mb-0 md:text-left">
+                    <p class="mb-4 text-center text-lg font-semibold text-blue">
+                        <span class="mr-4 text-red">//</span>OUR TEAM
+                    </p>
+                    <h4 class="mb-16 text-center text-3xl font-bold text-blue md:text-5xl">
+                        Our team of expert marketers
+                    </h4>
+                </div>
+            </div>
+            <div class="pb-16 grid gap-16 md:gap-20 lg:grid-cols-3">
+                <div class="rounded-3xl border  border-gray-600 p-8 text-center lg:text-left">
+                    <div>
+                        <img class="mx-auto mb-8" src="img/member-1.png" alt="" />
+                    </div>
+                    <div class="border bottom-2 w-1/5 border-blue justify-center mx-auto my-8">
+
+                    </div>
+
+                    <h3 class="mb-4 text-center text-3xl font-semibold text-blue">
+                        Pippa Clarkson
+                    </h3>
+                    <p class="text-center text-2xl font-medium text-blue-dark">
+                        Lead Manager
+                    </p>
+                    <div class="my-8 flex justify-center gap-4">
+                        <div><img src="img/Facebook.png" alt="" /></div>
+                        <div><img src="img/Twitter.png" alt="" /></div>
+                    </div>
+                </div>
+                <div class="rounded-3xl bg-card bg-cover p-8 text-center lg:text-left">
+                    <div>
+                        <img class="mx-auto mb-8" src="img/member-2.png" alt="" />
+                    </div>
+                    <div class="border bottom-2 w-1/5 border-blue justify-center mx-auto my-8">
+
+                    </div>
+
+                    <h3 class="mb-4 text-center text-3xl font-semibold text-blue">
+                        Richard Walsh
+                    </h3>
+                    <p class="text-center text-2xl font-medium text-blue-dark">
+                        Lead Manager
+                    </p>
+                    <div class="my-8 flex justify-center gap-4">
+                        <div><img src="img/Facebook.png" alt="" /></div>
+                        <div><img src="img/Twitter.png" alt="" /></div>
+                        <div><img src="img/Instagram.png" alt="" /></div>
+                    </div>
+                </div>
+
+                <div class="rounded-3xl border border-gray-600 p-8 text-center lg:text-left">
+                    <div>
+                        <img class="mx-auto mb-8" src="img/member-3.png" alt="" />
+
+                        <div class="border bottom-2 w-1/5 border-blue justify-center mx-auto my-8">
+
+                        </div>
+                    </div>
+                    <h3 class="mb-4 text-center text-3xl font-semibold text-blue">
+                        Richard Walsh
+                    </h3>
+                    <p class="text-center text-2xl font-medium text-blue-dark">
+                        Lead Manager
+                    </p>
+                    <div class="my-8 flex justify-center gap-4">
+                        <div><img src="img/Twitter.png" alt="" /></div>
+                        <div><img src="img/Instagram.png" alt="" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <!-- foooter -->
+    <footer class="mt-12 bg-blue text-white">
+        <div class="container">
+            <div class="py-12">
+                <div class="text-gray mx-auto grid gap-10 text-left md:grid-cols-4 lg:w-3/4">
+                    <div>
+                        <h3 class="mb-5 text-2xl font-medium md:mb-8 md:text-3xl text-center md:text-left">Pages</h3>
+                        <div class="flex flex-col text-center md:text-left">
+                            <a href="index.html" class="mb-3 text-lg md:text-lg">Home</a>
+                            <a href="services.html" class="mb-3 text-lg md:text-lg">Services</a>
+                            <a href="aboutUs.html" class="mb-3 text-lg md:text-lg">About</a>
+                            <a href="#" class="mb-3 text-lg md:text-lg">Contact</a>
+                            <a href="#" class="mb-3 text-lg md:text-lg">Career</a>
+                            <a href="#" class="mb-3 text-lg md:text-lg">Terms & Condition</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="mb-5 te text-2xl font-medium md:mb-8 md:mt-0 md:text-3xl text-center md:text-left">
+                            Social Logins
+                        </h3>
+                        <div class="flex flex-col text-center md:text-left">
+                            <a href="#" class="mb-3 text-lg md:text-lg">Facebook</a>
+                            <a href="#" class="mb-3 text-lg md:text-lg">Twitter</a>
+                            <a href="#" class="mb-3 text-lg md:text-lg">instagram</a>
+                            <a href="#" class="mb-3 text-lg md:text-lg">Skype</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="mb-5 text-2xl font-medium md:mb-8 md:mt-0 md:text-3xl text-center md:text-left">
+                            Location
+                        </h3>
+                        <div class="mb-3 text-center md:text-left">
+                            <div class="mb-5">
+                                <a href="" class="text-lg  md:text-lg">Pages UNIT NO. 147, FIRST FLOOR, JMD MEGAPOLIS,
+                                    Badshahpur
+                                    Sohna Rd Hwy, Sector 48, Gurugram, Haryana 122018 .</a>
+                            </div>
+                            <a href="" class="text-lg underline md:text-lg">Location Map</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="mb-5  text-2xl font-medium md:mb-8 md:mt-0 md:text-3xl text-center md:text-left">
+                            Get in touch with
+                        </h3>
+                        <div class=" flex flex-col items-center md:items-start ">
+                            <div class="rounded-sm bg-blue-dark mb-8">
+                                <p class=" p-4 text-lg font-semibold md:text-lg ">
+                                    +91 8617514085
+                                </p>
+                            </div>
+                            <a href="" class="mb-3 text-lg underline md:text-lg">business@growthan.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-gray border-gray-light border-t border-solid p-2 text-center text-lg md:text-lg">
+                Copyright © 2021 Foodies.
+            </p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
