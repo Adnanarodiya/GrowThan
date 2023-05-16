@@ -633,6 +633,10 @@ p {
   margin-bottom: 2rem;
 }
 
+.ml-12 {
+  margin-left: 3rem;
+}
+
 .ml-5 {
   margin-left: 1.25rem;
 }
@@ -665,18 +669,6 @@ p {
   margin-top: 2rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
-.ml-16 {
-  margin-left: 4rem;
-}
-
-.ml-12 {
-  margin-left: 3rem;
-}
-
 .flex {
   display: flex;
 }
@@ -703,14 +695,6 @@ p {
 
 .h-full {
   height: 100%;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
-.h-4\/5 {
-  height: 80%;
 }
 
 .max-h-12 {
@@ -1067,10 +1051,6 @@ p {
   text-align: center;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1419,6 +1399,11 @@ p {
     line-height: 2.25rem;
   }
 
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1437,11 +1422,6 @@ p {
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
 
