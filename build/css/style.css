@@ -544,6 +544,14 @@ p {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .bottom-2 {
   bottom: 0.5rem;
 }
@@ -561,9 +569,19 @@ p {
   margin-right: auto;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .my-14 {
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .my-8 {
@@ -585,6 +603,10 @@ p {
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .mb-24 {
@@ -615,8 +637,16 @@ p {
   margin-left: 1.25rem;
 }
 
+.ml-8 {
+  margin-left: 2rem;
+}
+
 .mr-4 {
   margin-right: 1rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-12 {
@@ -633,6 +663,18 @@ p {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.ml-16 {
+  margin-left: 4rem;
+}
+
+.ml-12 {
+  margin-left: 3rem;
 }
 
 .flex {
@@ -657,6 +699,18 @@ p {
 
 .h-6 {
   height: 1.5rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-4\/5 {
+  height: 80%;
 }
 
 .max-h-12 {
@@ -707,8 +761,20 @@ p {
   cursor: pointer;
 }
 
+.list-decimal {
+  list-style-type: decimal;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -831,6 +897,10 @@ p {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-BlogBg {
+  background-image: url('../../build/img/Blog-bg.png');
+}
+
 .bg-about {
   background-image: url('../../build/img/aboutusbg-img.png');
 }
@@ -839,20 +909,28 @@ p {
   background-image: url('../../build/img/card-bg-image.png');
 }
 
-.bg-contact {
-  background-image: url('../../build/img/contact-us-bg.png');
+.bg-careerBg {
+  background-image: url('../../build/img/career-bg.png');
 }
 
 .bg-contactus {
-  background-image: url('../../build/img/card-bg-image.png');
+  background-image: url('../../build/img/contact-us-card.png');
 }
 
 .bg-cta {
   background-image: url('../../build/img/service-cta.png');
 }
 
+.bg-detailBg {
+  background-image: url('../../build/img/detail-form-bg.png');
+}
+
 .bg-hero {
   background-image: url('../../build/img/Background.png');
+}
+
+.bg-joinUsBg {
+  background-image: url('../../build/img/join-us-bg.png');
 }
 
 .bg-services {
@@ -861,6 +939,14 @@ p {
 
 .bg-subscribe {
   background-image: url('../../build/img/Subscribe-bg-img.png');
+}
+
+.bg-tcBg {
+  background-image: url('../../build/img/tc-bg.png');
+}
+
+.bg-termsBg {
+  background-image: url('../../build/img/terms-bg.png');
 }
 
 .bg-testimonial {
@@ -888,8 +974,16 @@ p {
   padding: 3rem;
 }
 
+.p-16 {
+  padding: 4rem;
+}
+
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-20 {
+  padding: 5rem;
 }
 
 .p-3 {
@@ -906,6 +1000,11 @@ p {
 
 .p-8 {
   padding: 2rem;
+}
+
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 
 .py-12 {
@@ -926,6 +1025,11 @@ p {
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .py-4 {
@@ -961,6 +1065,10 @@ p {
 
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-2xl {
@@ -1016,6 +1124,10 @@ p {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
 }
 
 .text-black {
@@ -1215,12 +1327,20 @@ p {
     width: 11rem;
   }
 
+  .md\:w-96 {
+    width: 24rem;
+  }
+
   .md\:w-full {
     width: 100%;
   }
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:grid-cols-4 {
@@ -1304,6 +1424,11 @@ p {
     line-height: 1;
   }
 
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .md\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
@@ -1312,6 +1437,11 @@ p {
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -1331,6 +1461,10 @@ p {
 
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:w-2\/4 {
@@ -1373,6 +1507,11 @@ p {
     text-align: left;
   }
 
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1381,5 +1520,9 @@ p {
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .lg\:leading-relaxed {
+    line-height: 1.625;
   }
 }
