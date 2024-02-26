@@ -1,492 +1,665 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Growthan</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
+    <!-- header  -->
+    <header class="py-4">
+      <div class="container">
+        <section class="flex items-center justify-between">
+          <div>
+            <a href="">
+              <img src="img/logo.png" alt="" class="max-h-12" />
+            </a>
+          </div>
 
-<body>
-  <!-- header  -->
-  <header class="py-4">
-    <div class="container">
-      <section class="flex items-center justify-between">
-        <div>
-          <a href="">
-            <img src="img/logo.png" alt="" class="max-h-12" />
-          </a>
-        </div>
-
-        <div class="items-center">
-          <button id="hamburger-button"
-            class="h-12 w-12 cursor-pointer rounded-md border-2 border-blue text-3xl text-blue md:hidden">
-            &#9776;
-          </button>
-          <nav class="hidden items-center space-x-8 md:block" aria-label="main">
-            <a class="text-xl font-semibold text-blue hover:text-red hover:underline" href="index.html">Home</a>
-            <a class="text-xl font-semibold text-blue hover:text-red hover:underline" href="aboutUs.html">About Us</a>
-            <a class="text-xl font-semibold text-blue hover:text-red hover:underline" href="services.html">Service</a>
-            <a class="text-xl font-semibold text-blue hover:text-red hover:underline" href="contactUs.html">Contact
-              Us</a>
-            <a class="text-xl font-semibold text-blue hover:text-red hover:underline" href="carrer.html">Career</a>
+          <div class="items-center">
             <button
-              class=" mx-auto h-16 w-4/5 items-center justify-center rounded-xl bg-blue text-xl font-semibold text-white sm:w-2/4 md:mx-0 md:w-44 hover:bg-white hover:text-blue border hover:border-blue"
-              type="button">
-              Register
+              id="hamburger-button"
+              class="h-12 w-12 cursor-pointer rounded-md border-2 border-blue text-3xl text-blue md:hidden"
+            >
+              &#9776;
             </button>
+            <nav
+              class="hidden items-center space-x-8 md:block"
+              aria-label="main"
+            >
+              <a
+                class="text-xl font-semibold text-blue hover:text-red hover:underline"
+                href="index.html"
+                >Home</a
+              >
+              <a
+                class="text-xl font-semibold text-blue hover:text-red hover:underline"
+                href="aboutUs.html"
+                >About Us</a
+              >
+              <a
+                class="text-xl font-semibold text-blue hover:text-red hover:underline"
+                href="services.html"
+                >Service</a
+              >
+              <a
+                class="text-xl font-semibold text-blue hover:text-red hover:underline"
+                href="contactUs.html"
+                >Contact Us</a
+              >
+              <a
+                class="text-xl font-semibold text-blue hover:text-red hover:underline"
+                href="carrer.html"
+                >Career</a
+              >
+              <button
+                class="mx-auto h-16 w-4/5 items-center justify-center rounded-xl bg-blue text-xl font-semibold text-white sm:w-2/4 md:mx-0 md:w-44 hover:bg-white hover:text-blue border hover:border-blue"
+                type="button"
+              >
+                Register
+              </button>
+            </nav>
+          </div>
+        </section>
+        <section
+          id="mobile-menu"
+          class="bg-green-light hidden w-full flex-col text-5xl"
+        >
+          <nav class="flex min-h-screen flex-col items-center py-8">
+            <a
+              class="w-full py-6 text-center text-lg font-semibold hover:text-red"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="w-full py-6 text-center text-lg font-semibold hover:text-red"
+              href="aboutUs.html"
+              >About Us</a
+            >
+            <a
+              class="w-full py-6 text-center text-lg font-semibold hover:text-red"
+              href="services.html"
+              >Service Us</a
+            >
+            <a
+              class="w-full py-6 text-center text-lg font-semibold hover:text-red"
+              href="contactUs.html"
+              >Contact Us</a
+            >
+            <a
+              class="w-full py-6 text-center text-lg font-semibold hover:text-red"
+              href="carrer.html"
+              >Career</a
+            >
           </nav>
-        </div>
-      </section>
-      <section id="mobile-menu" class="bg-green-light hidden w-full flex-col text-5xl">
-        <nav class="flex min-h-screen flex-col items-center py-8">
-          <a class="w-full py-6 text-center text-lg font-semibold hover:text-red" href="index.html">Home</a>
-          <a class="w-full py-6 text-center text-lg font-semibold hover:text-red" href="aboutUs.html">About Us</a>
-          <a class="w-full py-6 text-center text-lg font-semibold hover:text-red" href="services.html">Service Us</a>
-          <a class="w-full py-6 text-center text-lg font-semibold hover:text-red" href="contactUs.html">Contact Us</a>
-          <a class="w-full py-6 text-center text-lg font-semibold hover:text-red" href="carrer.html">Career</a>
-        </nav>
-      </section>
-    </div>
-  </header>
-  <main>
-    <!-- hero section  -->
-    <section class="bg-hero bg-cover">
-      <div class="container">
-        <div class="flex-row items-center justify-center py-16 md:flex">
-          <div class="w-full md:w-3/4">
-            <div>
-              <h1 class="mb-12 text-center  lg:text-7xl font-bold text-blue md:text-left text-5xl">
-                Driving the Digital Growth by
-                <span class="text-red"> Affiliate Marketing</span>
-              </h1>
-            </div>
-            <div class="flex justify-center md:justify-start">
-              <button
-                class=" mx-auto h-16 w-4/5 items-center justify-center rounded-xl bg-blue text-xl font-semibold text-white sm:w-2/4 md:mx-0 md:w-44 hover:bg-white hover:text-blue border hover:border-blue"
-                type="button">
-                Register
-              </button>
-            </div>
-          </div>
-          <div><img src="img/hero-img.png" alt="" /></div>
-        </div>
+        </section>
       </div>
-    </section>
-    <!-- services  -->
-    <section class="py-12 md:py-28">
-      <div class="container">
-        <div class="mb-12 flex flex-col justify-between md:mb-20 md:flex-row md:items-center">
-          <div class="flex flex-col items-center md:flex-row">
-            <div><img class="my-8 md:mr-8" src="img/Services.png" alt="" /></div>
-            <div class="mb-8 text-center md:mb-0 md:text-left">
-              <p class="mb-4 text-lg font-semibold text-blue">
-                <span class="mr-4 text-red">//</span>SERVICES
-              </p>
-              <h4 class="text-3xl font-bold text-blue md:text-5xl">
-                Services We Provide
-              </h4>
-            </div>
-          </div>
-          <div>
-            <button
-              class="mx-auto mb-8 flex h-16 w-4/5 flex-row items-center justify-center rounded-xl bg-blue text-xl font-semibold text-white sm:w-2/4 md:mx-0 md:mb-0 md:w-44 hover:bg-white hover:text-blue border hover:border-blue"
-              type="button">
-              Our Services
-
-            </button>
-          </div>
-        </div>
-
-
-        <div class="grid gap-16 sm:grid-cols-2 md:gap-16 lg:grid-cols-3">
-          <div class="rounded-3xl bg-card bg-cover p-12 text-center lg:text-left">
-            <div>
-              <img class="mx-auto mb-8 lg:mx-0" src="img/service-1.png" alt="" />
-            </div>
-            <h3 class="mb-4 text-3xl font-semibold text-blue">
-              Performance Marketing
-            </h3>
-            <p class="text-2xl font-medium text-blue-dark">
-              Get the best results for your marketing campaigns by leveraging
-              data-driven insights and analytics.
-            </p>
-          </div>
-          <div class="rounded-3xl bg-card bg-cover p-12 text-center lg:text-left">
-            <div>
-              <img class="mx-auto mb-8 lg:mx-0" src="img/service-2.png" alt="" />
-            </div>
-            <h3 class="mb-4 text-3xl font-semibold text-blue">
-              Mobile Marketing
-            </h3>
-            <p class="text-2xl font-medium text-blue-dark">
-              Reach your target audience wherever they are with
-              mobile-optimized campaigns that drive engagement and
-              conversions.
-            </p>
-          </div>
-          <div class="rounded-3xl bg-card bg-cover p-12 text-center lg:text-left">
-            <div>
-              <img class="mx-auto mb-8 lg:mx-0" src="img/service-3.png" alt="" />
-            </div>
-            <h3 class="mb-4 text-3xl font-semibold text-blue">
-              Email Marketing
-            </h3>
-            <p class="text-2xl font-medium text-blue-dark">
-              Build stronger relationships with your customers by delivering
-              personalized content straight to their inbox.
-            </p>
-          </div>
-          <div class="rounded-3xl bg-card bg-cover p-12 text-center lg:text-left">
-            <div>
-              <img class="mx-auto mb-8 lg:mx-0" src="img/service-4.png" alt="" />
-            </div>
-            <h3 class="mb-4 text-3xl font-semibold text-blue">
-              Media Buying & Planning
-            </h3>
-            <p class="text-2xl font-medium text-blue-dark">
-              Maximize your ROI by identifying the right media channels and
-              placements to reach your target audience.
-            </p>
-          </div>
-          <div class="rounded-3xl bg-card bg-cover p-12 text-center lg:text-left">
-            <div>
-              <img class="mx-auto mb-8 lg:mx-0" src="img/service-5.png" alt="" />
-            </div>
-            <h3 class="mb-4 text-3xl font-semibold text-blue">
-              Influencer Marketing
-            </h3>
-            <p class="text-2xl font-medium text-blue-dark">
-              Amplify your brand's reach and credibility by partnering with
-              influencers who align with your brand values.
-            </p>
-          </div>
-          <div class="rounded-3xl bg-card bg-cover p-12 text-center lg:text-left">
-            <div>
-              <img class="mx-auto mb-8 lg:mx-0" src="img/service-6.png" alt="" />
-            </div>
-            <h3 class="mb-4 text-3xl font-semibold text-blue">
-              Content Marketing
-            </h3>
-            <p class="text-2xl font-medium text-blue-dark">
-              Engage your audience with high-quality and relevant content that
-              educates, entertains, and inspires action.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Get the best Mobile  -->
-    <section class="py-12 md:py-28">
-      <div class="container">
-        <div class="grid gap-8 lg:grid-cols-2">
-          <div class="order-1 lg:order-1">
-            <div>
-              <img class="mx-auto lg:mx-0" src="img/img-1.png" alt="" />
-            </div>
-          </div>
-
-          <div class="order-2">
-            <div class="order-1 flex flex-col items-center justify-center md:flex-row lg:order-2 lg:justify-start">
+    </header>
+    <main>
+      <!-- hero section  -->
+      <section class="bg-hero bg-cover">
+        <div class="container">
+          <div class="flex-row items-center justify-center py-16 md:flex">
+            <div class="w-full md:w-3/4">
               <div>
-                <img class="my-8 md:mr-8" src="img/get-the-best.png" alt="" />
+                <h1
+                  class="mb-12 text-center lg:text-7xl font-bold text-blue md:text-left text-5xl"
+                >
+                  Driving the Digital Growth by
+                  <span class="text-red"> Affiliate Marketing</span>
+                </h1>
+              </div>
+              <div class="flex justify-center md:justify-start">
+                <button
+                  class="mx-auto h-16 w-4/5 items-center justify-center rounded-xl bg-blue text-xl font-semibold text-white sm:w-2/4 md:mx-0 md:w-44 hover:bg-white hover:text-blue border hover:border-blue"
+                  type="button"
+                >
+                  Register
+                </button>
+              </div>
+            </div>
+            <div><img src="img/hero-img.png" alt="" /></div>
+          </div>
+        </div>
+      </section>
+      <!-- services  -->
+      <section class="py-12 md:py-28">
+        <div class="container">
+          <div
+            class="mb-12 flex flex-col justify-between md:mb-20 md:flex-row md:items-center"
+          >
+            <div class="flex flex-col items-center md:flex-row">
+              <div>
+                <img class="my-8 md:mr-8" src="img/Services.png" alt="" />
               </div>
               <div class="mb-8 text-center md:mb-0 md:text-left">
                 <p class="mb-4 text-lg font-semibold text-blue">
-                  <span class="mr-4 text-red">//</span>GET THE BEST
+                  <span class="mr-4 text-red">//</span>SERVICES
                 </p>
                 <h4 class="text-3xl font-bold text-blue md:text-5xl">
-                  Why Growthan?
+                  Services We Provide
                 </h4>
               </div>
             </div>
-            <hr />
-            <p
-              class="mx-auto my-8 w-4/5 text-center md:w-full text-xl font-medium text-blue-dark md:text-2xl lg:mx-0 lg:text-left">
-              We at Growthan provide a robust platform for wide range of
-              Performance Marketing Services. We expertise in various models
-              of marketing to suit our clients requirement and generate best
-              ROI. we cater to clients from different business verticals
-              including, Real Money Gaming, e – Commerce, Banking,
-              Entertainment, Insurance, Travel, Finance, Sports, Automobile,
-              etc. Our highly dedicated team of expert affiliate marketing
-              managers provide services for our advertisers and publishers to
-              mutually grow their business, revenue and drive successful
-              results.
-            </p>
-            <div class="mx-auto">
+            <div>
               <button
-                class="mx-auto mb-8 flex h-16 w-4/5 flex-row items-center justify-center rounded-xl bg-blue text-xl font-semibold text-white sm:w-2/4 lg:mx-0 lg:mb-0 lg:w-44"
-                type="button">
-                Register
+                class="mx-auto mb-8 flex h-16 w-4/5 flex-row items-center justify-center rounded-xl bg-blue text-xl font-semibold text-white sm:w-2/4 md:mx-0 md:mb-0 md:w-44 hover:bg-white hover:text-blue border hover:border-blue"
+                type="button"
+              >
+                Our Services
               </button>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- Client logo  -->
-    <section id="client-logo" class="my-14 md:my-24">
-      <div class="container">
-        <div class="mx-auto flex w-4/5 flex-wrap justify-between">
-          <img src="img/l-1.png" alt="" class="mx-auto p-3" />
-          <img src="img/l-2.png" alt="" class="mx-auto p-3" />
-          <img src="img/l-3.png" alt="" class="mx-auto p-3" />
-          <img src="img/l-6.png" alt="" class="mx-auto p-3" />
-          <img src="img/l-5.png" alt="" class="mx-auto p-3" />
-        </div>
-      </div>
-    </section>
-    <!-- TESTIMONIAL -->
-    <section class="py-20">
-      <div class="container">
-        <div class="mb-12 flex flex-col justify-between md:mb-20 md:flex-row md:items-center">
-          <div class="flex flex-col items-center md:flex-row">
-            <div>
-              <img class="my-8 md:mr-8" src="img/Testimonial.png" alt="" />
-            </div>
-            <div class="mb-8 text-center md:mb-0 md:text-left">
-              <p class="mb-4 text-lg font-semibold text-blue">
-                <span class="mr-4 text-red">//</span>TESTIMONIAL
-              </p>
-              <h4 class="text-3xl font-bold text-blue md:w-3/4 md:text-5xl">
-                We work with customers across all industries
-              </h4>
-            </div>
-          </div>
-          <div class="mx-auto flex gap-4">
-            <button type="button"
-              class="flex h-16 w-16 items-center justify-center rounded-full bg-blue text-white hover:border hover:border-gray-500 hover:bg-white hover:text-blue">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="h-6 w-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-              </svg>
-            </button>
-            <button type="button"
-              class="flex h-16 w-16 items-center justify-center rounded-full bg-blue text-white hover:border hover:border-gray-500 hover:bg-white hover:text-blue">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="h-6 w-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="grid gap-12 md:grid-cols-2">
-          <div class="rounded-lg bg-testimonial p-8">
-            <div class="rounded-lg bg-white p-8 shadow-md">
-              <div class="flex justify-between">
-                <div class="flex items-center">
-                  <img class="mr-4" src="img/test-logo-1.png" alt="" />
-                  <div class="text-3xl font-bold text-blue">Company</div>
-                </div>
-                <div class="flex p-4">
-                  <img src="img/Star.png" alt="" />
-                </div>
-              </div>
-              <hr />
-              <p class="py-8 text-xl text-blue-dark">
-                Working with growthan.com has been a game-changer for our
-                business. Their strategies have led to significant growth and
-                a boost in revenue.
-              </p>
-            </div>
-            <div class="flex flex-row">
-              <div><img class="mr-4 mt-8" src="img/test-1.png" alt="" /></div>
-              <div class="flex flex-col justify-center">
-                <h4 class="text-2xl font-semibold text-blue">John Carter</h4>
-                <p class="text-gray-500">Marketing Lead at Google</p>
-              </div>
-            </div>
-          </div>
-          <div class="bg-testimonial p-8">
-            <div class="rounded-lg bg-white p-8 shadow-md">
-              <div class="flex justify-between">
-                <div class="flex items-center">
-                  <img class="mr-4" src="img/test-logo-2.png" alt="" />
-                  <div class="text-3xl font-bold text-blue">Company</div>
-                </div>
-                <div class="flex p-4">
-                  <img src="img/Star.png" alt="" />
-                </div>
-              </div>
-              <hr />
-              <p class="py-8 text-xl text-blue-dark">
-                I'm extremely impressed with the level of expertise and
-                dedication that the team at Growthan brings to every project.
-                They consistently deliver great results.
-              </p>
-            </div>
-            <div class="flex flex-row">
-              <div><img class="mr-4 mt-8" src="img/test-2.png" alt="" /></div>
-              <div class="flex flex-col justify-center">
-                <h4 class="text-2xl font-semibold text-blue">Peeter pawl</h4>
-                <p class="text-gray-500">Designere</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- stats  -->
-    <section class="my-14 bg-subscribe bg-cover bg-no-repeat object-fill md:mt-24">
-      <div class="container">
-        <div class="">
-          <div>
-            <div class="mx-auto grid grid-cols-1 gap-16 py-12 text-center md:grid-cols-2 md:py-32 lg:w-2/4">
-              <div class="items-center justify-center md:flex">
-                <h3 class="mb-2 text-2xl font-bold text-white sm:mb-0 md:text-center md:text-3xl lg:text-5xl">
-                  100<span class="text-purple-700">+</span>
-                </h3>
-                <p class="text-lg font-normal text-gray md:pl-3 md:text-left">
-                  HAPPY CLIENTS
-                </p>
-              </div>
-              <div class="items-center justify-center md:flex">
-                <h3 class="mb-2 text-2xl font-bold text-white sm:mb-0 md:text-center md:text-3xl lg:text-5xl">
-                  500<span class="text-red-600">+</span>
-                </h3>
-                <p class="text-base font-normal text-gray md:pl-3 md:text-left">
-                  PUBLISHERS
-                </p>
-              </div>
-              <div class="items-center justify-center md:flex">
-                <h3 class="mb-2 text-2xl font-bold text-white sm:mb-0 md:text-center md:text-3xl lg:text-5xl">
-                  2,500<span class="text-yellow-500">+</span>
-                </h3>
-                <p class="text-base font-normal text-gray md:pl-3 md:text-left">
-                  DAILY CONVERSIONS
-                </p>
-              </div>
-              <div class="items-center justify-center md:flex">
-                <h3 class="mb-2 text-2xl font-bold text-white sm:mb-0 md:text-center md:text-3xl lg:text-5xl">
-                  150<span class="text-green-500">+</span>
-                </h3>
-                <p class="text-base font-normal text-gray md:pl-3 md:text-left">
-                  CAMPAIGNS DELIVERED
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Get the best Computer -->
-    <section class="py-12 md:py-28">
-      <div class="container">
-        <div class="grid gap-8 lg:grid-cols-2">
-          <div class="order-1 lg:order-1">
-            <div>
-              <img class="mx-auto lg:mx-0" src="img/solution-offer-last.png" alt="" />
-            </div>
-          </div>
 
-          <div class="order-2">
-            <div class="order-1 flex flex-col items-center justify-center md:flex-row lg:order-2 lg:justify-start">
+          <div class="grid gap-16 sm:grid-cols-2 md:gap-16 lg:grid-cols-3">
+            <div
+              class="rounded-3xl bg-card bg-cover p-12 text-center lg:text-left"
+            >
               <div>
-                <img class="my-8 md:mr-40" src="img/get-the-best.png" alt="" />
+                <img
+                  class="mx-auto mb-8 lg:mx-0"
+                  src="img/service-1.png"
+                  alt=""
+                />
+              </div>
+              <h3 class="mb-4 text-3xl font-semibold text-blue">
+                Performance Marketing
+              </h3>
+              <p class="text-2xl font-medium text-blue-dark">
+                Get the best results for your marketing campaigns by leveraging
+                data-driven insights and analytics.
+              </p>
+            </div>
+            <div
+              class="rounded-3xl bg-card bg-cover p-12 text-center lg:text-left"
+            >
+              <div>
+                <img
+                  class="mx-auto mb-8 lg:mx-0"
+                  src="img/service-2.png"
+                  alt=""
+                />
+              </div>
+              <h3 class="mb-4 text-3xl font-semibold text-blue">
+                Mobile Marketing
+              </h3>
+              <p class="text-2xl font-medium text-blue-dark">
+                Reach your target audience wherever they are with
+                mobile-optimized campaigns that drive engagement and
+                conversions.
+              </p>
+            </div>
+            <div
+              class="rounded-3xl bg-card bg-cover p-12 text-center lg:text-left"
+            >
+              <div>
+                <img
+                  class="mx-auto mb-8 lg:mx-0"
+                  src="img/service-3.png"
+                  alt=""
+                />
+              </div>
+              <h3 class="mb-4 text-3xl font-semibold text-blue">
+                Email Marketing
+              </h3>
+              <p class="text-2xl font-medium text-blue-dark">
+                Build stronger relationships with your customers by delivering
+                personalized content straight to their inbox.
+              </p>
+            </div>
+            <div
+              class="rounded-3xl bg-card bg-cover p-12 text-center lg:text-left"
+            >
+              <div>
+                <img
+                  class="mx-auto mb-8 lg:mx-0"
+                  src="img/service-4.png"
+                  alt=""
+                />
+              </div>
+              <h3 class="mb-4 text-3xl font-semibold text-blue">
+                Media Buying & Planning
+              </h3>
+              <p class="text-2xl font-medium text-blue-dark">
+                Maximize your ROI by identifying the right media channels and
+                placements to reach your target audience.
+              </p>
+            </div>
+            <div
+              class="rounded-3xl bg-card bg-cover p-12 text-center lg:text-left"
+            >
+              <div>
+                <img
+                  class="mx-auto mb-8 lg:mx-0"
+                  src="img/service-5.png"
+                  alt=""
+                />
+              </div>
+              <h3 class="mb-4 text-3xl font-semibold text-blue">
+                Influencer Marketing
+              </h3>
+              <p class="text-2xl font-medium text-blue-dark">
+                Amplify your brand's reach and credibility by partnering with
+                influencers who align with your brand values.
+              </p>
+            </div>
+            <div
+              class="rounded-3xl bg-card bg-cover p-12 text-center lg:text-left"
+            >
+              <div>
+                <img
+                  class="mx-auto mb-8 lg:mx-0"
+                  src="img/service-6.png"
+                  alt=""
+                />
+              </div>
+              <h3 class="mb-4 text-3xl font-semibold text-blue">
+                Content Marketing
+              </h3>
+              <p class="text-2xl font-medium text-blue-dark">
+                Engage your audience with high-quality and relevant content that
+                educates, entertains, and inspires action.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Get the best Mobile  -->
+      <section class="py-12 md:py-28">
+        <div class="container">
+          <div class="grid gap-8 lg:grid-cols-2">
+            <div class="order-1 lg:order-1">
+              <div>
+                <img class="mx-auto lg:mx-0" src="img/img-1.png" alt="" />
+              </div>
+            </div>
+
+            <div class="order-2">
+              <div
+                class="order-1 flex flex-col items-center justify-center md:flex-row lg:order-2 lg:justify-start"
+              >
+                <div>
+                  <img class="my-8 md:mr-8" src="img/get-the-best.png" alt="" />
+                </div>
+                <div class="mb-8 text-center md:mb-0 md:text-left">
+                  <p class="mb-4 text-lg font-semibold text-blue">
+                    <span class="mr-4 text-red">//</span>GET THE BEST
+                  </p>
+                  <h4 class="text-3xl font-bold text-blue md:text-5xl">
+                    Why Growthan?
+                  </h4>
+                </div>
+              </div>
+              <hr />
+              <p
+                class="mx-auto my-8 w-4/5 text-center md:w-full text-xl font-medium text-blue-dark md:text-2xl lg:mx-0 lg:text-left"
+              >
+                We at Growthan provide a robust platform for wide range of
+                Performance Marketing Services. We expertise in various models
+                of marketing to suit our clients requirement and generate best
+                ROI. we cater to clients from different business verticals
+                including, Real Money Gaming, e – Commerce, Banking,
+                Entertainment, Insurance, Travel, Finance, Sports, Automobile,
+                etc. Our highly dedicated team of expert affiliate marketing
+                managers provide services for our advertisers and publishers to
+                mutually grow their business, revenue and drive successful
+                results.
+              </p>
+              <div class="mx-auto">
+                <button
+                  class="mx-auto mb-8 flex h-16 w-4/5 flex-row items-center justify-center rounded-xl bg-blue text-xl font-semibold text-white sm:w-2/4 lg:mx-0 lg:mb-0 lg:w-44"
+                  type="button"
+                >
+                  Register
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Client logo  -->
+      <section id="client-logo" class="my-14 md:my-24">
+        <div class="container">
+          <div class="mx-auto flex w-4/5 flex-wrap justify-between">
+            <img src="img/l-1.png" alt="" class="mx-auto p-3" />
+            <img src="img/l-2.png" alt="" class="mx-auto p-3" />
+            <img src="img/l-3.png" alt="" class="mx-auto p-3" />
+            <img src="img/l-6.png" alt="" class="mx-auto p-3" />
+            <img src="img/l-5.png" alt="" class="mx-auto p-3" />
+          </div>
+        </div>
+      </section>
+      <!-- TESTIMONIAL -->
+      <section class="py-20">
+        <div class="container">
+          <div
+            class="mb-12 flex flex-col justify-between md:mb-20 md:flex-row md:items-center"
+          >
+            <div class="flex flex-col items-center md:flex-row">
+              <div>
+                <img class="my-8 md:mr-8" src="img/Testimonial.png" alt="" />
               </div>
               <div class="mb-8 text-center md:mb-0 md:text-left">
                 <p class="mb-4 text-lg font-semibold text-blue">
-                  <span class="mr-4 text-red">//</span>GET THE BEST
+                  <span class="mr-4 text-red">//</span>TESTIMONIAL
                 </p>
-                <h4 class="text-3xl font-bold text-blue md:text-5xl">
-                  We Offer Reliable Solution To Increase Brand Visibility
+                <h4 class="text-3xl font-bold text-blue md:w-3/4 md:text-5xl">
+                  We work with customers across all industries
                 </h4>
               </div>
             </div>
-            <hr />
-            <p
-              class="mx-auto my-8 w-4/5 text-center text-xl md:w-full font-medium text-blue-dark md:text-2xl lg:mx-0 lg:text-left">
-              We help brands to advertise on Web & Mobile medium. We help
-              brands to select best medium with optimum module in order to
-              maximize their ROI. Our experienced Media Buying & Planning team
-              help brands to achieve their desired results through optimum
-              inventory. We help brands of different verticals to choose best
-              module with best medium to work on in order to acquire quality
-              customers. Our Ad operations and development team help
-              advertisers in optimizing the creatives and landing pages for
-              the increase in-conversion rate
-            </p>
-            <div class="mx-auto">
+            <div class="mx-auto flex gap-4">
               <button
-                class="mx-auto mb-8 flex h-16 w-4/5 flex-row items-center justify-center rounded-xl bg-blue text-xl font-semibold text-white sm:w-2/4 lg:mx-0 lg:mb-0 lg:w-44"
-                type="button">
-                Register
+                type="button"
+                class="flex h-16 w-16 items-center justify-center rounded-full bg-blue text-white hover:border hover:border-gray-500 hover:bg-white hover:text-blue"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-6 w-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 19.5L8.25 12l7.5-7.5"
+                  />
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="flex h-16 w-16 items-center justify-center rounded-full bg-blue text-white hover:border hover:border-gray-500 hover:bg-white hover:text-blue"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-6 w-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
               </button>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <!-- foooter -->
-  <footer class="mt-12 bg-blue text-white">
-    <div class="container">
-      <div class="py-12">
-        <div class="text-gray mx-auto grid gap-10 text-left md:grid-cols-4 lg:w-3/4">
-          <div>
-            <h3 class="mb-5 text-2xl font-medium md:mb-8 md:text-3xl text-center md:text-left">Pages</h3>
-            <div class="flex flex-col text-center md:text-left">
-              <a href="index.html" class="mb-3 text-lg md:text-lg">Home</a>
-              <a href="services.html" class="mb-3 text-lg md:text-lg">Services</a>
-              <a href="aboutUs.html" class="mb-3 text-lg md:text-lg">About</a>
-              <a href="contactUs.html" class="mb-3 text-lg md:text-lg">Contact</a>
-              <a href="#" class="mb-3 text-lg md:text-lg">Career</a>
-              <a href="terms&cond.html" class="mb-3 text-lg md:text-lg">Terms & Condition</a>
-            </div>
-          </div>
-
-          <div>
-            <h3 class="mb-5 te text-2xl font-medium md:mb-8 md:mt-0 md:text-3xl text-center md:text-left">
-              Social Logins
-            </h3>
-            <div class="flex flex-col text-center md:text-left">
-              <a href="#" class="mb-3 text-lg md:text-lg">Facebook</a>
-              <a href="#" class="mb-3 text-lg md:text-lg">Twitter</a>
-              <a href="#" class="mb-3 text-lg md:text-lg">instagram</a>
-              <a href="#" class="mb-3 text-lg md:text-lg">Skype</a>
-            </div>
-          </div>
-          <div>
-            <h3 class="mb-5 text-2xl font-medium md:mb-8 md:mt-0 md:text-3xl text-center md:text-left">
-              Location
-            </h3>
-            <div class="mb-3 text-center md:text-left">
-              <div class="mb-5">
-                <a href="" class="text-lg  md:text-lg">Pages UNIT NO. 147, FIRST FLOOR, JMD MEGAPOLIS,
-                  Badshahpur
-                  Sohna Rd Hwy, Sector 48, Gurugram, Haryana 122018 .</a>
-              </div>
-              <a href="" class="text-lg underline md:text-lg">Location Map</a>
-            </div>
-          </div>
-          <div>
-            <h3 class="mb-5  text-2xl font-medium md:mb-8 md:mt-0 md:text-3xl text-center md:text-left">
-              Get in touch with
-            </h3>
-            <div class=" flex flex-col items-center md:items-start ">
-              <div class="rounded-sm bg-blue-dark mb-8">
-                <p class=" p-4 text-lg font-semibold md:text-lg ">
-                  +91 8617514085
+          <div class="grid gap-12 md:grid-cols-2">
+            <div class="rounded-lg bg-testimonial p-8">
+              <div class="rounded-lg bg-white p-8 shadow-md">
+                <div class="flex justify-between">
+                  <div class="flex items-center">
+                    <img class="mr-4" src="img/test-logo-1.png" alt="" />
+                    <div class="text-3xl font-bold text-blue">Company</div>
+                  </div>
+                  <div class="flex p-4">
+                    <img src="img/Star.png" alt="" />
+                  </div>
+                </div>
+                <hr />
+                <p class="py-8 text-xl text-blue-dark">
+                  Working with growthan.com has been a game-changer for our
+                  business. Their strategies have led to significant growth and
+                  a boost in revenue.
                 </p>
               </div>
-              <a href="" class="mb-3 text-lg underline md:text-lg">business@growthan.com</a>
+              <div class="flex flex-row">
+                <div><img class="mr-4 mt-8" src="img/test-1.png" alt="" /></div>
+                <div class="flex flex-col justify-center">
+                  <h4 class="text-2xl font-semibold text-blue">John Carter</h4>
+                  <p class="text-gray-500">Marketing Lead at Google</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-testimonial p-8">
+              <div class="rounded-lg bg-white p-8 shadow-md">
+                <div class="flex justify-between">
+                  <div class="flex items-center">
+                    <img class="mr-4" src="img/test-logo-2.png" alt="" />
+                    <div class="text-3xl font-bold text-blue">Company</div>
+                  </div>
+                  <div class="flex p-4">
+                    <img src="img/Star.png" alt="" />
+                  </div>
+                </div>
+                <hr />
+                <p class="py-8 text-xl text-blue-dark">
+                  I'm extremely impressed with the level of expertise and
+                  dedication that the team at Growthan brings to every project.
+                  They consistently deliver great results.
+                </p>
+              </div>
+              <div class="flex flex-row">
+                <div><img class="mr-4 mt-8" src="img/test-2.png" alt="" /></div>
+                <div class="flex flex-col justify-center">
+                  <h4 class="text-2xl font-semibold text-blue">Peeter pawl</h4>
+                  <p class="text-gray-500">Designere</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <p class="text-gray border-gray-light border-t border-solid p-2 text-center text-lg md:text-lg">
-        Copyright © 2021 Foodies.
-      </p>
-    </div>
-  </footer>
-  <script src="js/app.js"></script>
-</body>
+      </section>
+      <!-- stats  -->
+      <section
+        class="my-14 bg-subscribe bg-cover bg-no-repeat object-fill md:mt-24"
+      >
+        <div class="container">
+          <div class="">
+            <div>
+              <div
+                class="mx-auto grid grid-cols-1 gap-16 py-12 text-center md:grid-cols-2 md:py-32 lg:w-2/4"
+              >
+                <div class="items-center justify-center md:flex">
+                  <h3
+                    class="mb-2 text-2xl font-bold text-white sm:mb-0 md:text-center md:text-3xl lg:text-5xl"
+                  >
+                    100<span class="text-purple-700">+</span>
+                  </h3>
+                  <p class="text-lg font-normal text-gray md:pl-3 md:text-left">
+                    HAPPY CLIENTS
+                  </p>
+                </div>
+                <div class="items-center justify-center md:flex">
+                  <h3
+                    class="mb-2 text-2xl font-bold text-white sm:mb-0 md:text-center md:text-3xl lg:text-5xl"
+                  >
+                    500<span class="text-red-600">+</span>
+                  </h3>
+                  <p
+                    class="text-base font-normal text-gray md:pl-3 md:text-left"
+                  >
+                    PUBLISHERS
+                  </p>
+                </div>
+                <div class="items-center justify-center md:flex">
+                  <h3
+                    class="mb-2 text-2xl font-bold text-white sm:mb-0 md:text-center md:text-3xl lg:text-5xl"
+                  >
+                    2,500<span class="text-yellow-500">+</span>
+                  </h3>
+                  <p
+                    class="text-base font-normal text-gray md:pl-3 md:text-left"
+                  >
+                    DAILY CONVERSIONS
+                  </p>
+                </div>
+                <div class="items-center justify-center md:flex">
+                  <h3
+                    class="mb-2 text-2xl font-bold text-white sm:mb-0 md:text-center md:text-3xl lg:text-5xl"
+                  >
+                    150<span class="text-green-500">+</span>
+                  </h3>
+                  <p
+                    class="text-base font-normal text-gray md:pl-3 md:text-left"
+                  >
+                    CAMPAIGNS DELIVERED
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Get the best Computer -->
+      <section class="py-12 md:py-28">
+        <div class="container">
+          <div class="grid gap-8 lg:grid-cols-2">
+            <div class="order-1 lg:order-1">
+              <div>
+                <img
+                  class="mx-auto lg:mx-0"
+                  src="img/solution-offer-last.png"
+                  alt=""
+                />
+              </div>
+            </div>
 
+            <div class="order-2">
+              <div
+                class="order-1 flex flex-col items-center justify-center md:flex-row lg:order-2 lg:justify-start"
+              >
+                <div>
+                  <img
+                    class="my-8 md:mr-40"
+                    src="img/get-the-best.png"
+                    alt=""
+                  />
+                </div>
+                <div class="mb-8 text-center md:mb-0 md:text-left">
+                  <p class="mb-4 text-lg font-semibold text-blue">
+                    <span class="mr-4 text-red">//</span>GET THE BEST
+                  </p>
+                  <h4 class="text-3xl font-bold text-blue md:text-5xl">
+                    We Offer Reliable Solution To Increase Brand Visibility
+                  </h4>
+                </div>
+              </div>
+              <hr />
+              <p
+                class="mx-auto my-8 w-4/5 text-center text-xl md:w-full font-medium text-blue-dark md:text-2xl lg:mx-0 lg:text-left"
+              >
+                We help brands to advertise on Web & Mobile medium. We help
+                brands to select best medium with optimum module in order to
+                maximize their ROI. Our experienced Media Buying & Planning team
+                help brands to achieve their desired results through optimum
+                inventory. We help brands of different verticals to choose best
+                module with best medium to work on in order to acquire quality
+                customers. Our Ad operations and development team help
+                advertisers in optimizing the creatives and landing pages for
+                the increase in-conversion rate
+              </p>
+              <div class="mx-auto">
+                <button
+                  class="mx-auto mb-8 flex h-16 w-4/5 flex-row items-center justify-center rounded-xl bg-blue text-xl font-semibold text-white sm:w-2/4 lg:mx-0 lg:mb-0 lg:w-44"
+                  type="button"
+                >
+                  Register
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- foooter -->
+    <footer class="mt-12 bg-blue text-white">
+      <div class="container">
+        <div class="py-12">
+          <div
+            class="text-gray mx-auto grid gap-10 text-left md:grid-cols-4 lg:w-3/4"
+          >
+            <div>
+              <h3
+                class="mb-5 text-2xl font-medium md:mb-8 md:text-3xl text-center md:text-left"
+              >
+                Pages
+              </h3>
+              <div class="flex flex-col text-center md:text-left">
+                <a href="index.html" class="mb-3 text-lg md:text-lg">Home</a>
+                <a href="services.html" class="mb-3 text-lg md:text-lg"
+                  >Services</a
+                >
+                <a href="aboutUs.html" class="mb-3 text-lg md:text-lg">About</a>
+                <a href="contactUs.html" class="mb-3 text-lg md:text-lg"
+                  >Contact</a
+                >
+                <a href="#" class="mb-3 text-lg md:text-lg">Career</a>
+                <a href="terms&cond.html" class="mb-3 text-lg md:text-lg"
+                  >Terms & Condition</a
+                >
+              </div>
+            </div>
+
+            <div>
+              <h3
+                class="mb-5 te text-2xl font-medium md:mb-8 md:mt-0 md:text-3xl text-center md:text-left"
+              >
+                Social Logins
+              </h3>
+              <div class="flex flex-col text-center md:text-left">
+                <a href="#" class="mb-3 text-lg md:text-lg">Facebook</a>
+                <a href="#" class="mb-3 text-lg md:text-lg">Twitter</a>
+                <a href="#" class="mb-3 text-lg md:text-lg">instagram</a>
+                <a href="#" class="mb-3 text-lg md:text-lg">Skype</a>
+              </div>
+            </div>
+            <div>
+              <h3
+                class="mb-5 text-2xl font-medium md:mb-8 md:mt-0 md:text-3xl text-center md:text-left"
+              >
+                Location
+              </h3>
+              <div class="mb-3 text-center md:text-left">
+                <div class="mb-5">
+                  <a href="" class="text-lg md:text-lg"
+                    >Pages UNIT NO. 147, FIRST FLOOR, JMD MEGAPOLIS, Badshahpur
+                    Sohna Rd Hwy, Sector 48, Gurugram, Haryana 122018 .</a
+                  >
+                </div>
+                <a href="" class="text-lg underline md:text-lg">Location Map</a>
+              </div>
+            </div>
+            <div>
+              <h3
+                class="mb-5 text-2xl font-medium md:mb-8 md:mt-0 md:text-3xl text-center md:text-left"
+              >
+                Get in touch with
+              </h3>
+              <div class="flex flex-col items-center md:items-start">
+                <div class="rounded-sm bg-blue-dark mb-8">
+                  <p class="p-4 text-lg font-semibold md:text-lg">
+                    +91 8617514085
+                  </p>
+                </div>
+                <a href="" class="mb-3 text-lg underline md:text-lg"
+                  >business@growthan.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <p
+          class="text-gray border-gray-light border-t border-solid p-2 text-center text-lg md:text-lg"
+        >
+          Copyright © 2021 Foodies.
+        </p>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
 </html>
